@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "openSans";
+  src:
+    url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+    url("../fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #fd6e0a;
+  --secondary-color: #fff8f3;
+  --text-primary: #1a1a1a;
+  --text-secondary: #474747;
+  --text-tertiary: #ffffff;
+  --bg-color: #f8f9fa;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "openSans", Arial, sans-serif;
+
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  background-color: var(--secondary-color);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+  max-height: 164px;
+}
+nav h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.logo {
+  color: var(--primary-color);
+}
+.nav-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+.nav-items button {
+  cursor: pointer;
+  width: 150px;
+  height: 64px;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  color: var(--text-tertiary);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.hero-content {
+  background-color: var(--secondary-color);
+  background-image: url("../images/header_bg.png");
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  max-height: 676px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hero-text {
+  max-width: 584px;
+  padding: 20px;
+}
+
+.greet {
+  font-size: 2.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+}
+.name {
+  font-size: 5.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 584px;
+  height: auto;
+  display: block;
+}
