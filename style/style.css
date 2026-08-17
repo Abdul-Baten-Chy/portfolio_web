@@ -1,3 +1,4 @@
+/* Font family */
 @font-face {
   font-family: "openSans";
   src:
@@ -7,7 +8,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* variable */
 :root {
   --primary-color: #fd6e0a;
   --secondary-color: #fff8f3;
@@ -32,9 +33,13 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Header css start  */
 .header {
   background-color: var(--secondary-color);
+  padding-top: 20px;
 }
+/* Navbar css start  */
 nav ul {
   list-style: none;
   padding: 0;
@@ -78,7 +83,9 @@ nav h1 {
   outline: none;
   border-radius: 5px;
 }
+/* Navbar css end  */
 
+/* Hero css start  */
 .hero-content {
   background-color: var(--secondary-color);
   background-image: url("../images/header_bg.png");
@@ -113,3 +120,48 @@ nav h1 {
   height: auto;
   display: block;
 }
+.hero-text > p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 64px;
+  background-color: var(--primary-color);
+  font-size: 1.25rem;
+  color: var(--text-tertiary);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #e65c00;
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 160px;
+  height: 64px;
+  background-color: transparent;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+  outline: 2px solid var(--primary-color);
+  border-radius: 5px;
+  margin-left: 30px;
+}
+/* Header css end  */
